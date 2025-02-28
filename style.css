@@ -1,0 +1,455 @@
+/* リセットCSS */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:where([hidden]:not([hidden='until-found'])){display:none!important}:where(html){-webkit-text-size-adjust:none;color-scheme:dark light;tab-size:2;scrollbar-gutter:stable}:where(html:has(dialog:modal[open])){overflow:clip}@media (prefers-reduced-motion:no-preference){:where(html:focus-within){scroll-behavior:smooth}}:where(body){line-height:1.5;font-family:system-ui,sans-serif;-webkit-font-smoothing:antialiased}:where(button){all:unset}:where(input,button,textarea,select){font:inherit;color:inherit}:where(textarea){resize:vertical;resize:block}:where(button,label,select,summary,[role='button'],[role='option']){cursor:pointer}:where(:disabled){cursor:not-allowed}:where(label:has(>input:disabled),label:has(+input:disabled)){cursor:not-allowed}:where(a){color:inherit;text-underline-offset:.2ex}:where(ul,ol){list-style:none}:where(img,svg,video,canvas,audio,iframe,embed,object){display:block}:where(img,picture,svg,video){max-inline-size:100%;block-size:auto}:where(p,h1,h2,h3,h4,h5,h6){overflow-wrap:break-word}:where(h1,h2,h3){line-height:calc(1em + 0.5rem);text-wrap:balance}:where(hr){border:none;border-block-start:1px solid;color:inherit;block-size:0;overflow:visible}:where(dialog){border:none;background:none;inset:unset;max-width:unset;max-height:unset}:where(dialog:not([open])){display:none!important}:where(:focus-visible){outline:3px solid CanvasText;box-shadow:0 0 0 5px Canvas;outline-offset:1px}:where(:focus-visible,:target){scroll-margin-block:8vh}:where(.visually-hidden:not(:focus-within,:active)){clip-path:inset(50%)!important;height:1px!important;width:1px!important;overflow:hidden!important;position:absolute!important;white-space:nowrap!important;border:0!important}
+
+/* ここからナビゲーションバー */
+nav {
+    z-index: 100;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.05);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-item {
+    padding: 0 20px 0 20px;
+}
+
+
+/* ここからヘッダー */
+.header-top {
+    display: flex;
+}
+
+.header-left {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 55%;
+}
+
+.header-left-top {
+    margin-top: 100px;
+}
+
+.header-left-top h1 {
+    padding-left: 10px;
+}
+
+.header-left-bottom {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-group-content{
+    width: 25%;
+}
+
+.img-group-content img {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.img-group-content p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -8px;
+    background-color: white;
+    border: black solid;
+    position: relative;
+}
+
+.just-changed-dryer {
+    /* text-decoration:underline;
+    text-decoration-style:wavy;
+    text-decoration-color:#FF0000; */
+    background: linear-gradient(transparent 80% , rgba(255, 0, 0, 0.674) 70%);
+}
+
+.header-right {
+    width: 45%;
+    filter: brightness(108%);
+}
+
+.header-bottom-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-bottom {
+    margin: 40px 0 40px 0;
+    padding: 30px 0 30px 0;
+    width: 70%;
+    background-color: rgba(189,42,64);
+    color: white;
+    font-weight: bolder;
+}
+
+.header-bottom button {
+    border: solid grey;
+    background-color: grey;
+    color: white;
+    padding: 0 20px 0 20px;
+    border-radius:0.5rem;
+    width: 35%;
+    height: 50px;
+    margin-top: 12px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: all ease 0.3s;
+}
+
+.header-bottom button:hover {
+    border: solid white;
+    background-color: white;
+    color: grey;
+    width: 37%;
+}
+
+
+
+/* ここから特徴 */
+
+.demerit-wrapper {
+    background-color: #f6f6f6;
+}
+
+.demerit-wrapper p {
+    margin-bottom: none;
+}
+
+.demerit-text {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.demerit-text::before {
+    content: "";
+    display: inline-block;
+    width: 300px;
+    height: 1px;
+    background-color: #BD2A40;
+}
+
+.demerit-text p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 40px 0 40px 0;
+    margin-bottom: 0;
+}
+
+.demerit-text span {
+    background: linear-gradient(transparent 80% , rgba(116, 116, 116, 0.684) 70%);
+}
+
+.demerit-body {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.demerit-body p {
+    margin-top: 40px;
+    font-size: 2.5rem;
+}
+
+.demerit-body span {
+    background: linear-gradient(transparent 80% , rgba(116, 116, 116, 0.684) 70%);
+}
+
+.card-group-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.card-body {
+    height: 20%;
+}
+
+.center-card {
+    margin: 0 70px 0 70px;
+}
+
+.between-merits {
+    height: 100px;
+    /* background-image: url(img/背景用_多角形3.png);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.between-merits img {
+    max-width: 100%;
+    height: auto;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.merit-text {
+    max-width: 100%;
+    text-align: center;
+}
+
+.merit-text p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 50px 0 50px 0;
+    margin-bottom: 0;
+}
+
+.merit-text span {
+    background: linear-gradient(transparent 80% , rgba(255, 0, 0, 0.674) 70%);
+}
+
+.seven-point-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.seven-point-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.seven-point {
+    box-sizing: border-box;
+    width: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-bottom: solid 1px #afafaf;
+    padding: 30px;
+}
+
+.seven-point-content {
+    display: flex;
+}
+
+.seven-point img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.seven-point-wrapper .seven-point:nth-child(2n+1) {
+    border-right: solid 1px #afafaf;
+}
+
+.seven-point-wrapper .seven-point:last-child {
+    border-bottom: none;
+}
+
+.seven-point-text {
+    width: 500px;
+    text-align: center;
+}
+
+.seven-point-text p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.seven-point-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.seven-point-text .more-detail:hover {
+    text-decoration: underline;
+}
+
+.merit-last-text {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 50px 0 50px 0;
+    margin-bottom: 0;
+}
+
+.merit-last-text span {
+    background: linear-gradient(transparent 80% , rgba(255, 0, 0, 0.674) 70%);
+}
+
+/* ここから価格 */
+
+.pricing-text {
+    text-align: center;
+}
+
+.pricing-text::before {
+    content: "";
+    display: inline-block;
+    width: 300px;
+    height: 1px;
+    background-color: #BD2A40;
+}
+
+.pricing-text p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 40px 0 40px 0;
+    margin-bottom: 0;
+}
+
+.price-compare {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.standard {
+    height: 500px;
+    width: 35%;
+    display: block;
+
+    background-image: url(img/price_background_1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.standard-first {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.pricing-content {
+    height: 300px;
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.pricing-content p {
+    margin-bottom: 30px;
+}
+
+.premium {
+    height: 500px;
+    width: 35%;
+    display: block;
+
+    background-image: url(img/price_background_2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.premium-first {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.pricing-text-container {
+    display: flex;
+}
+
+.theme-text {
+    width: 50%;
+    text-align: start;
+}
+
+.content-text {
+    width: 50%;
+    text-align: end;
+}
+
+.pricing-last {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* ここからFAQ */
+.faq-text {
+    text-align: center;
+}
+
+.faq-text::before {
+    content: "";
+    display: inline-block;
+    width: 300px;
+    height: 1px;
+    background-color: #BD2A40;
+}
+
+.faq-text p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 40px 0 40px 0;
+    margin-bottom: 0;
+}
+
+.question-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.question-wrapper li {
+    display: block;
+    width: 600px;
+}
+
+.collapse-card {
+    margin-top: 18px;
+}
+
+/* ここから問い合わせ */
+.inquiry-text {
+    text-align: center;
+}
+
+.inquiry-text::before {
+    content: "";
+    display: inline-block;
+    width: 300px;
+    height: 1px;
+    background-color: #BD2A40;
+}
+
+.inquiry-text p {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 40px 0 40px 0;
+    margin-bottom: 0;
+}
+
+.inquiry-content {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.inquiry-content button {
+    border: solid grey;
+    background-color: grey;
+    color: white;
+    padding: 0 20px 0 20px;
+}
+
+.inquiry-bottom-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(189,42,64);
+}
+
+.inquiry-middle-text {
+    margin:-25px 0 30px 0;
+}
