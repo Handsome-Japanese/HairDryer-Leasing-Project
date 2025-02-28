@@ -315,6 +315,7 @@ nav {
     height: 500px;
     width: 35%;
     display: block;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 
     background-image: url(img/price_background_1.jpeg);
     background-repeat: no-repeat;
@@ -344,6 +345,7 @@ nav {
     height: 500px;
     width: 35%;
     display: block;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 
     background-image: url(img/price_background_2.jpeg);
     background-repeat: no-repeat;
